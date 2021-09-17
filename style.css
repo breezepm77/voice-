@@ -58,6 +58,8 @@ section p {
     text-align: right;
 }
 #btn{
+    font-family: 'Montserrat';
+    font-size: 18px;
     margin-left: 630px;
     margin-top: -25px;
     position: absolute;
@@ -66,4 +68,5 @@ section p {
     border-radius: 5px;
     border: none;
     background-color:firebrick;
+    color: #fff;
 }
