@@ -5,6 +5,7 @@ window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogn
 
 const recognition = new window.SpeechRecognition();
 recognition.interimResults = true;
+recognition.lang = "RU-ru"; 
 
 let p = document.createElement('p');
 
