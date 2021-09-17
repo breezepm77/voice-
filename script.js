@@ -1,4 +1,5 @@
 const texts = document.querySelector('.texts');
+const text = document.querySelector('.text')
 
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -18,26 +19,34 @@ recognition.addEventListener('result', (e) => {
     texts.appendChild(p);
 
     if(e.results[0].isFinal){
-        if(text.includes('hello')){
-            p = document.createElement('p');
-            p.classList.add('replay');
-            p.innerText = 'Hi';
-            texts.appendChild(p)
-        }
-            if(text.includes('what is your name') || text.includes("what's your name")) {
+            if(text.includes("новости")) {
                 p = document.createElement('p');
                 p.classList.add('replay');
-                p.innerText = "My name's Rofiq, Yours?";
+                p.innerText = "Opening kun.uz";
                 texts.appendChild(p)
-            }
-            if(text.includes("Open new GitHub repository")) {
+                window.open('https://kun.uz')
+            }else if(text.includes("учебный центр")){
                 p = document.createElement('p');
                 p.classList.add('replay');
-                p.innerText = "Opening new github repository";
+                p.innerText = "Opening najottalim.uz";
                 texts.appendChild(p)
-                window.open('https://github.com/new')
+                window.open('https://najottalim.uz')
+            }else if(text.includes("красный")){
+                p = document.createElement('p');
+                p.classList.add('replay');
+                p.innerText = "body background-color red";
+                section.style.backgroundColor = "red";
+            }else if(text.includes("зелёный")){
+                p = document.createElement('p');
+                p.classList.add('replay');
+                p.innerText = "body background-color green";
+                section.style.backgroundColor = "green";
+            }else if(text.includes("жёлтый")){
+                p = document.createElement('p');
+                p.classList.add('replay');
+                p.innerText = "body background-color green";
+                section.style.backgroundColor = "gold";
             }
-        p = document.createElement('p');
     }
 
     console.log(e);
@@ -47,4 +56,8 @@ recognition.addEventListener('end', ()=>{
     recognition.start();
 })
 
-recognition.start();
+form.addEventListener('click',function(e) {
+    e.preventDefault()
+
+    recognition.start();
+})

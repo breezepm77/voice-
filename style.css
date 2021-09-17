@@ -6,7 +6,9 @@
     font-style: normal;
     font-display: swap;
 }
-
+body.active{
+    background-color: red;
+}
 *{
     padding: 0;
     margin: 0;
@@ -25,14 +27,14 @@ section{
     padding: 50px 0px;
 }
 section h1 {
-   color: rgba(255, 255, 255, 0.322);
+   color: black;
    text-align: center;
    width: 100%;
    font-size: 50px;
    margin-bottom: 10px;
 }
 section p {
-    color: rgba(255, 255, 255, 0.322);
+    color: black;
     width: 100%;
     text-align: center;
     margin-bottom: 40px;
@@ -42,9 +44,9 @@ section p {
     max-width: 500px;
     margin: 0 auto;
     justify-content: center;
+    margin-top: 35px;
 }
 .texts p {
-    color: black;
     text-align: left;
     width: 100%;
     background-color: white;
@@ -54,4 +56,14 @@ section p {
 }
 .texts p.replay {
     text-align: right;
+}
+#btn{
+    margin-left: 800px;
+    margin-top: -25px;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color:firebrick;
 }
