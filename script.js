@@ -44,7 +44,7 @@ recognition.addEventListener('result', (e) => {
             }else if(text.includes("жёлтый")){
                 p = document.createElement('p');
                 p.classList.add('replay');
-                p.innerText = "body background-color green";
+                p.innerText = "body background-color gold";
                 section.style.backgroundColor = "gold";
             }
     }
