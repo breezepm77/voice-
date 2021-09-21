@@ -18,7 +18,7 @@ recognition.addEventListener('result', (e) => {
 
     p.innerText = text;
     texts.appendChild(p);
-
+    console.log(text)
     if(e.results[0].isFinal){
             if(text.includes()) {
                 p = document.createElement('p');
