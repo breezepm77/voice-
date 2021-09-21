@@ -18,14 +18,14 @@ recognition.addEventListener('result', (e) => {
 
     p.innerText = text;
     texts.appendChild(p);
-    console.log(texts)
+    console.log(text)
     if(e.results[0].isFinal){
             if(text.includes()) {
                 p = document.createElement('p');
                 p.classList.add('replay');
                 p.innerText = "Opening kun.uz";
                 texts.appendChild(p)
-                window.open(`https://www.google.com/search?q=${texts}`)
+                window.open(`https://www.google.com/search?q=${texts.results}`)
             }else if(text.includes("учебный центр")){
                 p = document.createElement('p');
                 p.classList.add('replay');
