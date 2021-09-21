@@ -20,7 +20,7 @@ recognition.addEventListener('result', (e) => {
     texts.appendChild(p);
 
     if(e.results[0].isFinal){
-            if(text.includes("")) {
+            if(text.includes()) {
                 p = document.createElement('p');
                 p.classList.add('replay');
                 p.innerText = "Opening kun.uz";
