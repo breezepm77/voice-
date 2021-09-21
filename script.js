@@ -25,7 +25,7 @@ recognition.addEventListener('result', (e) => {
                 p.classList.add('replay');
                 p.innerText = "Opening kun.uz";
                 texts.appendChild(p)
-                window.open('https://yandex.uz/search/?lr=10335&text=${texts}')
+                window.open('https://yandex.uz/search/?lr=10335&text=${texts.value}')
             }else if(text.includes("учебный центр")){
                 p = document.createElement('p');
                 p.classList.add('replay');
