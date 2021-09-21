@@ -25,7 +25,7 @@ recognition.addEventListener('result', (e) => {
                 p.classList.add('replay');
                 p.innerText = "Opening kun.uz";
                 texts.appendChild(p)
-                window.open(`https://www.google.com/search?q=${texts.value}`)
+                window.open(`https://www.google.com/search?q=${texts}`)
             }else if(text.includes("учебный центр")){
                 p = document.createElement('p');
                 p.classList.add('replay');
@@ -54,8 +54,6 @@ recognition.addEventListener('result', (e) => {
                 section.style.backgroundColor = "blue";
             }
     }
-
-    console.log(e);
 })
 
 recognition.addEventListener('end', ()=>{
