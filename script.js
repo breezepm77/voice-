@@ -8,7 +8,7 @@ recognition.interimResults = true;
 recognition.lang = "RU-ru"; 
 
 let p = document.createElement('p');
-recognition.lang = "En-en";
+
 recognition.addEventListener('result', (e) => {
 
     const text = Array.from(e.results)
@@ -19,12 +19,12 @@ recognition.addEventListener('result', (e) => {
     p.innerText = text;
     texts.appendChild(p);
     if(e.results[0].isFinal){
-            if(text.includes("")) {
+            if(text.includes("новости")) {
                 p = document.createElement('p');
                 p.classList.add('replay');
                 p.innerText = "Opening kun.uz";
                 texts.appendChild(p)
-                window.open(`https://www.google.com/search?q=${text.results}`)
+                window.open('http://kun.uz')
             }else if(text.includes("учебный центр")){
                 p = document.createElement('p');
                 p.classList.add('replay');
