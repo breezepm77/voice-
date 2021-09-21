@@ -8,7 +8,7 @@ recognition.interimResults = true;
 recognition.lang = "RU-ru"; 
 
 let p = document.createElement('p');
-
+recognition.lang = "En-en";
 recognition.addEventListener('result', (e) => {
 
     const text = Array.from(e.results)
@@ -20,7 +20,7 @@ recognition.addEventListener('result', (e) => {
     texts.appendChild(p);
 
     if(e.results[0].isFinal){
-            if(text.includes("новости")) {
+            if(text.includes("")) {
                 p = document.createElement('p');
                 p.classList.add('replay');
                 p.innerText = "Opening kun.uz";
